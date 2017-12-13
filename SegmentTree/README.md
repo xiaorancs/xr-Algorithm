@@ -10,5 +10,9 @@
     
     + 查询给定区间[l,r]直接的和,但是有多次查询,而且有动态更新.
 
-2. 
+2. [range_minimum_query.cpp](./range_minimum_query.cpp)
+
+    + 动态查询区间的最小值,
+
+
  
