@@ -68,7 +68,12 @@
     我们在前面介绍过区间最小值的查询，使用线段树查询，这里我们只需要增加一个维度表示最大值即可
  
 
+8. [Count_and_Toggle_Query_on_BinaryArray.cpp](./Count_and_Toggle_Query_on_BinaryArray.cpp)
 
+    + 给你一个2进制数组，初始时都为false，你有两个操作，Toggle(us,ue),更新数组arr[us,ue]的值，
+    修改的要求的true->false， false->true。Count(qs,qe),计算arr[qs,qe]的和。
 
+    解决方式：我们可以使用就简单的更新值，暴力解决即可。前面介绍过一个lazy Propagation的线段树的方式。
+    
     
 
