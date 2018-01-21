@@ -75,5 +75,11 @@
 
     解决方式：我们可以使用就简单的更新值，暴力解决即可。前面介绍过一个lazy Propagation的线段树的方式。
     
-    
+9. [Querying maximum number of divisors that a number in a given range](./max_number_of_divisors_in_range.cpp)  
+    + 查询最大区间中的最大的因子个数，[L,R],L<=X <= R;  
+    例如: [1,10]
+    1有1个因子，2有2个因子，3有2个因子，4有3个因子，5有2个因子，     
+    6有4个因子，7有2个因子，8有4个因子，9有3个因子，10有4个因子，
+    最大值是4.
+
 
