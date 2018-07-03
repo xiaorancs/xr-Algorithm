@@ -20,7 +20,6 @@ namespace alg {
     /**
      * shuffle the list of length len
      */ 
-
     template<typename T>
     static void shuffle(T* list, int len) {
         srand(time(NULL));
@@ -41,13 +40,11 @@ namespace alg {
     static void shuffle(Iterator first, Iterator last) {
         if(first >= last || first+1 == last) 
             return;
-        int i = 0, len = last-first;
+        int i = last-first;
         
-        for(Iterator it=first; it!=last;++it){
+        while(--i){
             int j = rand() % (i+1);
-            Iterator temp = it;
-            *it = *(it+j);
-            *(it+j) = *temp;
+            std::swap(*(first+i), *(first+j));
         }
     }
 
