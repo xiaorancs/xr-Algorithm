@@ -22,6 +22,14 @@ namespace alg {
         T temp = (a<b)?b:a;
         return (temp<c)?c:temp;
     }
+
+    template<class T>
+    static inline void swap(T &x, T &y) {
+        T tmp = x;
+        x = y;
+        y = tmp;
+    }
+
 } 
 
 #endif
