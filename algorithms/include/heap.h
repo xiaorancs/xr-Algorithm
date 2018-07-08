@@ -79,6 +79,38 @@ namespace alg {
                 return x_elements[x_size];
             }
 
+            // top
+            elem top() {
+                return x_elements[x_size-1];
+            }
+            
+            // remove the given data
+            bool remove(const T & data) {
+                for(int i=0;i<x_size;i++) {
+                    if(x_elements[i].data == data) { // find
+                        int n = x_size - 1;
+                        if(n != i) { // i不是最后一个
+                            swap(x_elements[i], x_elements[n]);
+                            down(i, x_size); // 保证i的位置的堆的性质
+                            up(i); 
+                        }
+                        x_size --;
+                        return true;
+                    }
+                }
+                return false;
+            }
+
+            /*
+             * decrease key
+             * 
+             */
+            void decrease_key(const T &data, int newkey) {
+                if(remove(data)) {
+                    push(newkey, data);
+                }
+            }
+
 
             /*
              * compare (the element, parent)
@@ -108,10 +140,12 @@ namespace alg {
                     if(right < n && !cmp(left, right)){
                         j = right;
                     }
-
-                    
+                    if(!cmp(j,i)) {
+                        break;
+                    }
+                    swap(x_elements[i], x_elements[j]);
+                    i = j;
                 }
-
             }
 
 
