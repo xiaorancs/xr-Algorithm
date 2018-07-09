@@ -11,16 +11,79 @@
 3. 使用时导入对应的.h文件，如果不清楚函数的借口，建议看一下源文件
 
 ## 已经实现(Implemented)
-name | file
-:-|:-:|-:
-Array shuffle | https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/shuffle.h
-2D Arrat | https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/array.h
-Dp_Algo  | https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/dp_algo.h
-Queue | https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/queue.h
-Stack   | https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/stack.h
-Bitset  | https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/bitset.h 
-Math    | https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/xmath.h
-Binary heap    | https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/heap.h
-Sort    | https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/sort.h
+<table>
+<tr>
+    <th>Name</th>
+    <th>File</th>
+</tr>
+<tr>
+    <td>Array shuffle</td>
+    <td>
+    <a href="https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/shuffle.h">
+    https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/shuffle.h</a></td>
+</tr>
+<tr>
+    <td>2D Array</td>
+    <td> 
+    <a href="https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/array.h">
+    https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/array.h</a>
+    </td>
+</tr>
+<tr>
+    <td>Dp_Algo</td>
+    <td> 
+    <a href="https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/dp_algo.h">
+    https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/dp_algo.h</a>
+    </td>
+</tr>
+
+<tr>
+    <td>Queue</td>
+    <td> 
+    <a href="https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/queue.h">
+    https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/queue.h</a>
+    </td>
+</tr>
+<tr>
+    <td>Stack</td>
+    <td> 
+    <a href="https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/stack.h">
+    https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/stack.h</a>
+    </td>
+</tr>
+<tr>
+    <td>Bitset</td>
+    <td> 
+    <a href="https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/bitset.h">
+    https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/bitset.h</a>
+    </td>
+</tr>
+
+<tr>
+    <td>Math</td>
+    <td> 
+    <a href="https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/xmath.h">
+    https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/xmath.h</a>
+    </td>
+</tr>
+<tr>
+    <td>Binary heap</td>
+    <td> 
+    <a href="https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/heap.h">
+    https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/heap.h</a>
+    </td>
+</tr>
+<tr>
+    <td>Sort</td>
+    <td> 
+    <a href="https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/sort.h">
+    https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/sort.h</a>
+    </td>
+</tr>
+</table>
 
 
+## 参考(Copy)
+1. 算法导论
+2. 机器笨猫博客，https://blog.csdn.net/fool_ran
+3. Github: https://github.com/xtaci/algorithms
