@@ -76,6 +76,37 @@ int main()
     }
     cout<<endl;
 
+    // shuffle a
+    cout<<"shuffle a ..."<<endl;
+    alg::shuffle(a, 5);
+    for(int i=0;i<5;i++){
+        cout<<a[i]<<" ";
+    }
+    cout<<endl;
+
+    // quickly sort
+    cout<<"quickSort ..."<<endl;
+    alg::QuickSort(a,0,5);
+    for(int i=0;i<5;i++){
+        cout<<a[i]<<" ";
+    }
+    cout<<endl;
+
+    // shuffle a
+    cout<<"shuffle a ..."<<endl;
+    alg::shuffle(a, 5);
+    for(int i=0;i<5;i++){
+        cout<<a[i]<<" ";
+    }
+    cout<<endl;
+
+    // quickly sort
+    cout<<"MergeSort ..."<<endl;
+    alg::MergeSort(a,0,5,cmp);
+    for(int i=0;i<5;i++){
+        cout<<a[i]<<" ";
+    }
+    cout<<endl;
 
     return 0;
 }

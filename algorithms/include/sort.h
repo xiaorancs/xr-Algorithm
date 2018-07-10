@@ -100,9 +100,92 @@ namespace alg {
             }
             h /= 3;
         }
-
-
     }
+
+
+    /**
+     * sort_util()
+     */ 
+    template<class T>
+    int Poivt(T list[], int start,int end, bool (*cmp)(T, T)=cmp) {
+        int t = randint(start, end);
+        swap(list[t],list[start]);
+        int p,i,j;
+        i = start+1;
+        j = end;
+        p = start;
+        while(1) {
+            while(i<end && cmp(list[i],list[p])) ++i;
+            while(j>start && !cmp(list[j],list[p])) --j;
+            if(j<=i) break;
+            else{
+                swap(list[i],list[j]);
+                ++i;
+                --j;
+            }
+        }
+        swap(list[j],list[p]);
+        return j;
+    }
+
+    /**
+     * quickly sort
+     * 
+     */ 
+    template<class T>
+    void QuickSort(T list[], int start,int end, bool (*cmp)(T, T)=cmp) {
+        if(start>=end) return;
+        int p = Poivt(list,start,end,cmp);
+        QuickSort(list,start,p-1,cmp);
+        QuickSort(list,p+1,end,cmp);
+    }
+
+    /*
+     * Merge list[start, mid] and list[mid+1, end]
+     */ 
+    template<class T>
+    void Merge(T list[], int start, int mid, int end, bool (*cmp)(T, T)=cmp) {
+        T *temp = new T[end-start+1];
+        int i=start,j=mid+1,k=0;
+        while(i<=mid && j<=end) {
+            if(cmp(list[i],list[j])) temp[k++] = list[i++];
+            else temp[k++] = list[j++];
+        }
+        while(i<=mid) {
+            temp[k++] = list[i++];
+        }
+        while(j<=end) {
+            temp[k++] = list[j++];
+        }
+        // copy 
+        for(i=start;i<=end;i++){
+            list[i] = temp[i-start];
+        }
+        delete [] temp;
+    }
+    
+    /**
+     * MergeSortUtil
+     */ 
+    template<class T>
+    void MergeSortUtil(T list[], int start,int end, bool (*cmp)(T, T)=cmp) {
+        if(start>=end) return;
+        int mid = (start+end) / 2;
+        MergeSortUtil(list,start,mid,cmp);
+        MergeSortUtil(list,mid+1,end,cmp);
+        
+        Merge(list,start,mid,end,cmp);
+    }
+    /**
+     * MergeSort
+     */ 
+    template<class T>
+    void MergeSort(T list[], int start,int end, bool (*cmp)(T, T)=cmp) {
+        MergeSortUtil(list,start,end-1,cmp);
+    }
+
+
+
 }
 
 

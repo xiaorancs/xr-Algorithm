@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 
 namespace alg {
 
@@ -30,6 +31,21 @@ namespace alg {
         y = tmp;
     }
 
+    static inline double random() {
+        
+    }
+
+    // renturn i = [0,n-1]
+    static inline int randint(int n) {
+        srand((unsigned) time(0));
+        return rand() % n;
+    }
+    
+    // get number in [start, end]
+    static inline int randint(int start, int end) {
+        srand((unsigned) time(0));
+        return start + rand() % (end-start+1);
+    }
 } 
 
 #endif
