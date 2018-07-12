@@ -4,7 +4,10 @@
  *
  * bubble sort
  * insertion sort
- *
+ * selection sort
+ * shell sort
+ * quickly sort
+ * merge sort
  ****************************************/
 
 #ifndef ALGO_BUBBLE_SORT_H_
