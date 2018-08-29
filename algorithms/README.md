@@ -80,7 +80,16 @@
     https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/sort.h</a>
     </td>
 </tr>
+<tr>
+    <td>Skip list</td>
+    <td> 
+    <a href="https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/skiplist.h">
+    https://github.com/xiaorancs/xr-Algorithm/tree/master/algorithms/include/skiplist.h</a>
+    </td>
+</tr>
+
 </table>
+
 
 
 ## 参考(Copy)
